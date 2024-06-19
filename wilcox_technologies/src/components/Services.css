@@ -1,0 +1,50 @@
+/* src/components/Services.css */
+
+.services-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .services-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .services-description {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .services-description p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  .services-description ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .services-description ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  .services-description ul li strong {
+    color: #333;
+  }
+  
+  .chart-container {
+    margin-bottom: 40px;
+  }
+  
+  .chart-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
