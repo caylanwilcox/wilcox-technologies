@@ -7,7 +7,7 @@ height: 100%;
 }
 
 .hero {
-height: 90vh;
+height: 98vh;
 width: 100%;
     background-image: url('../work.jpg');
     background-size: cover;
@@ -51,7 +51,7 @@ width: 100%;
  .subline{
   font-weight: 500;
   font-size: 1.em;
-  
+  color: #767676;
  }
   .hero h1 {
     margin-left: 20px;
@@ -86,10 +86,9 @@ line-height:1.5em;
     background: #000000;
     border-radius: 5px;
     text-decoration: none;
-    width: 120px;
     font-family: "Open Sans", sans-serif;
     letter-spacing: .1cap;
-
+margin-bottom: 20px
     ;
   }
   

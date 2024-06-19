@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
- height:5vh;
+ height:8vh;
     padding: 1rem 2rem;
     width: 100%;
    
@@ -41,7 +41,10 @@
 
   
   }
-  
+  .market{
+    margin-left: 20px;
+    font-weight: 600;
+  }
   .nav-links {
     list-style: none;
     display: flex;

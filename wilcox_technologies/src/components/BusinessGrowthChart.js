@@ -17,20 +17,25 @@ const BusinessGrowthChart = ({ onSelectLevel }) => {
 
   const handleClick = (data) => {
     const selectedLevel = levels.find(level => level.label === data.activeLabel);
-    onSelectLevel(selectedLevel);
+    if (selectedLevel) {
+      onSelectLevel(selectedLevel);
+    }
   };
 
   return (
-    <ResponsiveContainer width="100%" height={400}>
-      <BarChart data={data} onClick={handleClick}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="budget" fill="#8884d8" />
-      </BarChart>
-    </ResponsiveContainer>
+    <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+      <h2 style={{ fontSize: '2em', color: '#333' }}>Business Growth</h2>
+      <ResponsiveContainer width="100%" height={400}>
+        <BarChart data={data} onClick={handleClick}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="budget" fill="#7a5195" />
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
   );
 };
 

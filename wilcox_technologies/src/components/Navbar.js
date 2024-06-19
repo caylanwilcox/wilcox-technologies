@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className='navbar-container'>
     <nav className="navbar">
-      <div className="logo"> ProIntel Techs <span className='digi'>- Marketing Agency <span className='h23'><span className='dot'>•</span> Powered by Ai</span> </span> </div>
+      <div className="logo"> ProIntel Techs <span className='digi'>-<span className='market'>Marketing Agency</span> <span className='h23'><span className='dot'>•</span> Powered by Ai</span> </span> </div>
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
       <li><Link to="/">Home</Link></li>  
          <li><Link to="/services">Services</Link></li>
