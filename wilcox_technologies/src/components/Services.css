@@ -2,6 +2,8 @@
 .services-container {
     padding: 2rem;
     text-align: center;
+    overflow:hidden;
+
   }
   
   .services-grid {

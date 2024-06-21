@@ -64,3 +64,40 @@
     background: #4e699b;
     ;
   }
+  .business-size-dropdown {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.business-size-dropdown select {
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.business-size-dropdown select:hover {
+    border-color: #0044cc;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #0044cc;
+  color: #fff;
+  padding: 10px;
+}
+
+tbody td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

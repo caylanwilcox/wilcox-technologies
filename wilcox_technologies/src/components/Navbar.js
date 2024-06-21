@@ -1,29 +1,42 @@
-// src/components/Navbar.js
-
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
 import './Navbar.css';
-import logo from './logo.png'
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const handleToggle = () => {
+
+  const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className='navbar-container'>
     <nav className="navbar">
-      <div className="logo">Your Vision Studios <span className='digi'>-<span className='market'></span>Data Driven Solutions to Unlock Maximum Business Potential <span className='h23'><span className='dot'></span></span> </span> </div>
-      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+      <div className="navbar-container">
+      <div className="nav-toggle" onClick={toggleMenu}>
+          ☰
+        </div>
+        <div className="logo">
+        {isOpen ? '' : ' Your Vision Studios'}
+       
+          <span className="digi"> 
+            <span className="market">
+              {isOpen ? '' : 'Data Driven Solutions to Unlock Maximum Business Potential'}
+            </span>
+            <span className="h23">
+            </span>
+          </span>
+        </div>
+       
+        <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
       <li><Link to="/">Home</Link></li>  
          <li><Link to="/services">Services</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
 
       </ul>
+      </div>
     </nav>
-    </div>
   );
-}
+};
 
 export default Navbar;

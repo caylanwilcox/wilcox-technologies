@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
- height:8vh;
+ height:100%;
     padding: 1rem 2rem;
     width: 100%;
    
@@ -126,27 +126,50 @@ color: #333;
   
   .nav-links li a:hover {
     color: #3054e4;
-  }@media (max-width: 800px) {
-  .nav-links {
+  }.nav-toggle {
     display: none;
-    flex-direction: column;
-    width: 100%;
+    font-size: 2rem;
+    cursor: pointer;
   }
 
-  .nav-links.open {
-    display: flex;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-  }
+  @media (max-width: 800px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  .logo{
+    justify-content: center;
+    text-align: center;
+    font-size: medium;
+    margin: 0;
+margin-top: 20px;  
 }
+
+    .nav-links.open {
+      display: flex;
+    }
+    nav .navbar{
+      display: flex;
+   
+    }
+  .market{
+    margin: 0;
+    margin-top: 30px;
+  }
+    .nav-toggle {
+      display: block;
+      padding-right: 15px;
+    }
+  .digi{
+    font-size: small;
+  }
+    .navbar {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }

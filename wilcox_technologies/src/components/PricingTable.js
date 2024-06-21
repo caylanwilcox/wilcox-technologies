@@ -129,10 +129,17 @@ const PricingTable = () => {
 
   return (
     <div className="pricing-table">
-      <div className="business-size-buttons">
-        <button className='cta-buton' onClick={() => setBusinessSize('small')}>Small Business</button>
-        <button className='cta-buton' onClick={() => setBusinessSize('medium')}>Medium Business</button>
-        <button className='cta-buton' onClick={() => setBusinessSize('large')}>Large Business</button>
+      <div className="business-size-dropdown">
+        <label htmlFor="businessSize">Select Business Size: </label>
+        <select
+          id="businessSize"
+          value={businessSize}
+          onChange={(e) => setBusinessSize(e.target.value)}
+        >
+          <option value="small">Small Business</option>
+          <option value="medium">Medium Business</option>
+          <option value="large">Large Business</option>
+        </select>
       </div>
       <table>
         <thead>
