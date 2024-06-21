@@ -8,6 +8,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import DigitalTransformation from './components/DigitalTransformation';
 import './App.css';
 import './reset.css';
 
@@ -24,6 +25,8 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/digital-transformation" element={<DigitalTransformation />} />
+
         </Routes>
         <Footer/>
       </div>

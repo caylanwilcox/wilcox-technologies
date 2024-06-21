@@ -1,17 +1,18 @@
 import React from 'react';
 import './Footer.css';
+import { FaFacebook,  FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="contact-info">
-        <p>Contact Us: 123 Business St, Suite 456, City, State, Zip</p>
-        <p>Phone: (123) 456-7890 | Email: info@prointeltechs.com</p>
+      <p>Contact Us: <br/> <br/> Phone: (630) 536-4713 | Email: info@prointeltechs.com</p>
+        <p>230 E Ohio Street, Suite 410, Chicago, IL, 60611</p>
       </div>
       <div className="social-media">
-        <a href="#"><img src="path/to/facebook-icon.png" alt="Facebook" /></a>
-        <a href="#"><img src="path/to/twitter-icon.png" alt="Twitter" /></a>
-        <a href="#"><img src="path/to/linkedin-icon.png" alt="LinkedIn" /></a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook className="social-icon" /></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram className="instagram" /></a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin className="social-icon" /></a>
       </div>
       <div className="newsletter">
         <p>Subscribe to our Newsletter:</p>

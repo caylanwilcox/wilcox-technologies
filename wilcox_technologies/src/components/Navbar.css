@@ -15,10 +15,13 @@
   }
   .digi{
     letter-spacing:.12cap;
-    font-size: medium;
+    font-size: large;
+    font-weight: 600;
+
   }
   .h23{
-    font-weight: 700;
+    font-weight: 900;
+    font-size: large;
     margin-left: 20px;
   }
   .navbar-container{
@@ -29,17 +32,78 @@
   .dot{
     margin-right: 20px;
   }
+  .digi, .market {
+    position: relative;
+    display: inline-block;
+}
+
+.digi::before, .market::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  color: #4e699b;
+  background: linear-gradient(120deg, color, rgba(255, 255, 255, 0.6), transparent);
+  transition: 0.5s;
+  animation: shine 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.market {
+  font-weight: normal;
+  transition: font-weight 0.5s ease-out;
+}
+
+@keyframes shine {
+  0% {
+      left: -100%;
+  }
+  50% {
+      left: 50%;
+      font-weight: bold;
+  }
+  100% {
+      left: 100%;
+      font-weight: normal;
+  }
+}
+@keyframes shine {
+  0% {
+      left: -100%;
+  }
+  50% {
+      left: 100%;
+  }
+  100% {
+      left: -100%;
+  }
+}
+
+.h23 {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.dot {
+  color: #ff0000;
+  font-size: 30px;
+}
   .logo {
     color: #000000;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 600;
     font-family:  "Mate", serif;
     font-weight: 500;
     font-style: normal;
         font-family: "Open Sans", sans-serif;
         letter-spacing: .5cap;
+position: relative;
+display: inline-block;
 
-  
+color: #333;
+
   }
   .market{
     margin-left: 20px;
@@ -61,7 +125,7 @@
   }
   
   .nav-links li a:hover {
-    color: #ffcc00;
+    color: #3054e4;
   }@media (max-width: 800px) {
   .nav-links {
     display: none;

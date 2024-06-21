@@ -1,8 +1,11 @@
 import React from 'react';
 import './Services.css';
 import digitalTransformationImage from '../components/digital-transformation.jpg';
+import { Link } from 'react-router-dom';
+
 import socialMediaMarketingImage from '../components/social-media-marketing.jpg';
 import seoDataAnalyticsImage from '../components/seo-data-analytics.jpg';
+import PricingTable from './PricingTable.js';
 
 const Services = () => {
   return (
@@ -13,8 +16,8 @@ const Services = () => {
           <img src={digitalTransformationImage} alt="Digital Transformation" />
           <h3>Digital Transformation</h3>
           <p>Transform your business with digital solutions that drive growth and efficiency.</p>
-          <a href="#" className="btn">Learn More</a>
-        </div>
+          <Link to="/digital-transformation" className="btn">Learn More</Link>
+          </div>
         <div className="service-item">
           <img src={socialMediaMarketingImage} alt="Social Media and Influencer Marketing" />
           <h3>Social Media and Influencer Marketing</h3>
@@ -28,6 +31,7 @@ const Services = () => {
           <a href="#" className="btn">Learn More</a>
         </div>
       </div>
+      <PricingTable/>
     </div>
   );
 };

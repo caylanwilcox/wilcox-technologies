@@ -1,4 +1,3 @@
-/* Footer.css */
 .footer {
     background-color: #000000;
     color: #fff;
@@ -7,14 +6,23 @@
     margin-top: auto; /* Push footer to the bottom */
   }
   
-  .footer .contact-info, .footer .social-media, .footer .newsletter {
+  .footer .contact-info,
+  .footer .social-media,
+  .footer .newsletter {
     margin-bottom: 1rem;
   }
   
-  .footer .social-media a img {
-    width: 32px;
-    height: 32px;
+  .footer .social-media a {
     margin: 0 0.5rem;
+    color: #fff;
+    font-size: 2rem;
+    transition: color 0.3s;
+  }
+  .social-media .instagram:hover{
+    color: rgb(233, 101, 101);
+  }
+  .footer .social-media a:hover {
+    color: #285cf7;
   }
   
   .footer .newsletter form {
