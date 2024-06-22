@@ -16,7 +16,7 @@ const Navbar = () => {
           ☰
         </div>
         <div className="logo">
-        {isOpen ? '' : ' Your Vision Studios'}
+        {isOpen ? '' : ' ProIntel Techs'}
        
           <span className="digi"> 
             <span className="market">

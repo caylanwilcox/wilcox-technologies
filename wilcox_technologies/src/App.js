@@ -9,6 +9,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import DigitalTransformation from './components/DigitalTransformation';
+import SocialMediaMarketing from './components/SocialMediaMarketing';
+import SeoDataAnalytics from './components/SeoDataAnalytics';
 import './App.css';
 import './reset.css';
 
@@ -26,7 +28,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/digital-transformation" element={<DigitalTransformation />} />
-
+          <Route path="/social-media-marketing" element={<SocialMediaMarketing />} />
+          <Route path="/seo-data-analytics" element={<SeoDataAnalytics />} />
         </Routes>
         <Footer/>
       </div>

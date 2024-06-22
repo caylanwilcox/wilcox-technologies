@@ -3,7 +3,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
     background: #ffffff;
  height:100%;
     padding: 1rem 2rem;
@@ -12,6 +12,8 @@
   }
   .navbar-container {
     width: 100%;
+    align-content: center;
+
   }
   .digi{
     letter-spacing:.12cap;
@@ -28,6 +30,7 @@
     display: flex;
     width: 100%;
     margin: auto;
+    align-content: center;
   }
   .dot{
     margin-right: 20px;
@@ -92,6 +95,8 @@
 }
   .logo {
     color: #000000;
+    align-content: center;
+
     font-size: 1.5rem;
     font-weight: 600;
     font-family:  "Mate", serif;
