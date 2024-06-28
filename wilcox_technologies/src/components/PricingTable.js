@@ -5,20 +5,7 @@ const PricingTable = () => {
   const [businessSize, setBusinessSize] = useState('small');
 
   const packages = [
-    {
-      name: 'Launch Package',
-      smallPrice: '$800',
-      mediumPrice: '$1600',
-      largePrice: 'Inquiry',
-      features: [
-        'ProIntel Web Application',
-        'Domain and Hosting Assistance',
-        'Priority Email Support',
-        'HTML SEO Optimization',
-        'First-Impression Audit',
-        'On-Site and Online First-Impression Audit',
-      ],
-    },
+
     {
       name: 'Brand Visibility Package',
       smallPrice: '$1,500',
@@ -103,7 +90,6 @@ const PricingTable = () => {
         'Comprehensive SEO Services',
         'ProIntel Marketing Strategy',
         'Monthly Performance Review',
-        'Full Delivery Platform Integration',
         'Enhanced Marketing Campaigns',
         'Conversion Rate Optimization',
         'Real-Time Data Analysis',
@@ -168,11 +154,9 @@ const PricingTable = () => {
             'Extensive SEO Services',
             'ProIntel Marketing Strategy',
             'Monthly Performance Review',
-            'Full Delivery Platform Integration',
             'Enhanced Marketing Campaigns',
             'Conversion Rate Optimization',
             'Real-Time Data Analysis',
-            'Dedicated Account Manager',
             'Bi-Weekly Performance Review',
             'Priority Email Support',
             '24/7 Support',

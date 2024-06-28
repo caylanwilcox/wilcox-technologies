@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="contact-info">
       <p>Contact Us: <br/> <br/> Phone: (630) 536-4713 | Email: info@prointeltechs.com</p>
-        <p>230 E Ohio Street, Suite 410, Chicago, IL, 60611</p>
+  
       </div>
       <div className="social-media">
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook className="social-icon" /></a>
