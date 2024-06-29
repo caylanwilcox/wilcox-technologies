@@ -12,6 +12,7 @@
   padding-bottom: 1%;
   text-align: left;
   padding-left: 1%;
+  
 }
 .left-side {
   padding: 3rem;
@@ -53,7 +54,7 @@
   color: white;
   font-size: 1.2em;
   padding-inline: 1%;
-  max-height: 800px;
+  max-height: 600px;
  margin-bottom: 0px;
 
 }
@@ -73,7 +74,16 @@
 .newsletter-subscribe {
   margin-bottom: 20px;
 }
-
+.newsletter-subscribe button {
+  background-color: #573cdc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
 .subscribe-form {
   display: flex;
   flex-direction: column;
@@ -123,6 +133,7 @@
 
 .newsletter-content .newsletter-box {
   margin-bottom: 10px;
+
 }
 
 * {
