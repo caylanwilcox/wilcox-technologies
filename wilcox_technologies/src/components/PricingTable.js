@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PricingTable.css';
+import './css/PricingTable.css';
 
 const PricingTable = () => {
   const [businessSize, setBusinessSize] = useState('small');

@@ -1,6 +1,6 @@
 import React from 'react';
-import './SeoDataAnalytics.css';
-import seoDataAnalyticsImage from '../components/seo-data-analytics.jpg';
+import './css/SeoDataAnalytics.css';
+import seoDataAnalyticsImage from './Images/seo-data-analytics.jpg';
 
 const SeoDataAnalytics = () => {
   return (

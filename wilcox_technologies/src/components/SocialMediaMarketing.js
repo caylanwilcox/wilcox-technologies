@@ -1,6 +1,6 @@
 import React from 'react';
-import './SocialMediaMarketing.css'; // Use the same CSS file
-import socialMediaMarketingImage from '../components/social-media-marketing.jpg';
+import './css/SocialMediaMarketing.css'; // Use the same CSS file
+import socialMediaMarketingImage from './Images/social-media-marketing.jpg';
 
 const SocialMediaMarketing = () => {
   return (

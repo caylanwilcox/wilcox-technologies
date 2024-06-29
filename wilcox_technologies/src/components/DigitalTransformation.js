@@ -1,6 +1,6 @@
 import React from 'react';
-import './DigitalTransformation.css';
-import digitalTransformationImage from '../components/digital-transformation.jpg';
+import './css/DigitalTransformation.css';
+import digitalTransformationImage from './Images/digital-transformation.jpg'
 
 const DigitalTransformation = () => {
   return (

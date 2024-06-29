@@ -1,9 +1,9 @@
 import React from 'react';
-import './Services.css';
-import digitalTransformationImage from '../components/digital-transformation.jpg';
+import './css/Services.css';
+import digitalTransformationImage from './Images/digital-transformation.jpg';
 import { Link } from 'react-router-dom';
-import socialMediaMarketingImage from '../components/social-media-marketing.jpg';
-import seoDataAnalyticsImage from '../components/seo-data-analytics.jpg';
+import socialMediaMarketingImage from './Images/social-media-marketing.jpg';
+import seoDataAnalyticsImage from './Images/seo-data-analytics.jpg';
 import PricingTable from './PricingTable.js';
 
 const Services = () => {

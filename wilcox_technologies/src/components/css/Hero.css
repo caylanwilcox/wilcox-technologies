@@ -1,0 +1,165 @@
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  width: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 46px rgba(0, 0, 0, 0.1), 0 1px 13px rgba(0, 0, 0, 0.08);
+
+}
+.titles{
+  padding-bottom: 1%;
+  text-align: left;
+  padding-left: 1%;
+}
+.left-side {
+  padding: 3rem;
+  padding-top: 1rem;
+  height: 100%;
+  width: 100%;
+  flex: 2 1 ;
+  background-color: #ffffff;
+  margin:auto;
+  margin:0 1rem 0 0rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 33px rgba(0, 0, 0, 0.08);
+}
+.paragraph{
+  text-align: left;
+
+
+}
+
+.right-side {
+  flex: 1 1 ;
+  padding: 20px;
+  background-color: #ffffff;
+  margin:0 1rem 0 1rem;
+
+}
+
+.carousel {
+  width: 100%;
+  height: auto;
+  
+}
+
+.carousel-image {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+  padding-inline: 1%;
+  max-height: 800px;
+ margin-bottom: 0px;
+
+}
+.company-info{
+  padding-left: 1%;
+}
+.company-info h1 {
+  font-size: 2em;
+  
+  margin-bottom: 10px;
+}
+
+.company-info p {
+  font-size: 1.2em;
+}
+
+.newsletter-subscribe {
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.subscribe-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1em;
+}
+
+.subscribe-form button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.recent-newsletters {
+  margin-bottom: 20px;
+}
+
+.recent-newsletters h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.newsletter-box {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #333;
+  font-size: 1em;
+}
+
+.expandable-newsletters {
+  margin-top: 20px;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-content .newsletter-box {
+  margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Media Queries for iPhone */
+@media only screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+.company-info{
+  margin: 0 1rem
+}
+
+  .carousel-image {
+    width: 100%;
+    min-height: 325px;
+  }
+
+  .company-info h1 {
+    font-size: 1.5em;
+
+  }
+
+  .company-info p {
+    font-size: 1em;
+  }
+
+  .recent-newsletters h2 {
+    font-size: 1.2em;
+  }
+
+  .newsletter-box {
+    height: 80px;
+  }
+}
