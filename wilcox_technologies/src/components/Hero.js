@@ -6,7 +6,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './css/Hero.css';
 import kip from './Images/shutterstock_2285412737.jpg';
 import marker from './Images/stockt.jpg';
-import Webd from './Images/vid.jpg';
+import Webd from './Images/web-developer-3.jpg';
 
 const Hero = () => {
   const [showSubscribeForm, setShowSubscribeForm] = useState(false);
