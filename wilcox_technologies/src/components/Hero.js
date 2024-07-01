@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './css/Hero.css';
-import kip from './Images/shutterstock_1471861661.jpg';
-import tower from './Images/shutterstock_2285412737.jpg';
-import Webd from './Images/web-developer-3.jpg';
+import kip from './Images/shutterstock_2285412737.jpg';
+import marker from './Images/stockt.jpg';
+import Webd from './Images/vid.jpg';
 
 const Hero = () => {
   const [showSubscribeForm, setShowSubscribeForm] = useState(false);
@@ -32,20 +32,25 @@ const Hero = () => {
           autoPlay={true}
           interval={5000}
         >
+            <div className="carousel-image">
+          <img src={kip}  alt="Image 3" />
+          </div>
+    
+              <div className="carousel-image">
+          <img src={Webd}  alt="Image 1" />
+          </div>
+        
           <div className="carousel-image">
-          <img src={Webd} alt="Image 1" />
-            <p className="legend">Image </p>
+          <img src={marker}  alt="Image 2" />
           </div>
-
-          <div className="carousel-image" >
-          <img src={tower} alt="Image 1" />
-
-            <p className="legend">Image 3</p>
-          </div>
+    
+      
+      
+         
         </Carousel>
         <div className="company-info">
           <h1 className='paragraph'>Who Are We?</h1>
-          <p>
+          <p>   
             At ProIntel, we are driven by innovation and excellence. We specialize in web development, IT solutions, and digital marketing. Our mission is to empower businesses to achieve their full potential through cutting-edge technology and strategic insights.
           </p>
           <p>
@@ -68,14 +73,14 @@ const Hero = () => {
           )}
         </div>
         <div className="recent-newsletters">
-          <h2>Recent Newsletters</h2>
-          <div className="newsletter-box" style={{ backgroundColor: 'lightgray' }}>
+          <h2>Recent Articles</h2>
+          <div className="newsletter-box">
             <p>Newsletter 1: Our latest updates on digital trends...</p>
           </div>
-          <div className="newsletter-box" style={{ backgroundColor: 'lightblue' }}>
+          <div className="newsletter-box">
             <p>Newsletter 2: Tips and tricks for enhancing your online presence...</p>
           </div>
-          <div className="newsletter-box" style={{ backgroundColor: 'lightgreen' }}>
+          <div className="newsletter-box" >
             <p>Newsletter 3: Success stories from our satisfied clients...</p>
           </div>
         </div>

@@ -14,6 +14,11 @@
   padding-left: 1%;
   
 }
+.carousel-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .left-side {
   padding: 3rem;
   padding-top: 1rem;
@@ -36,28 +41,27 @@
   padding: 20px;
   background-color: #ffffff;
   margin:0 1rem 0 1rem;
+  
 
 }
-
+.logo{
+  display: flex;
+  align-items: center;
+}
+.llogo{
+  width: 6%;
+  align-items: center;
+}
 .carousel {
   width: 100%;
   height: auto;
-  
+}
+.carousel-image{
+  box-shadow: 0 40px 46px rgba(0, 0, 0, 0.1), 0 1px 13px rgba(0, 0, 0, 0.08);
+  max-height: 690px;
 }
 
-.carousel-image {
-  width: 100%;
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.2em;
-  padding-inline: 1%;
-  max-height: 600px;
- margin-bottom: 0px;
 
-}
 .company-info{
   padding-left: 1%;
 }
@@ -74,15 +78,19 @@
 .newsletter-subscribe {
   margin-bottom: 20px;
 }
-.newsletter-subscribe button {
-  background-color: #573cdc;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+.newsletter-box {
+  width: auto;
+  height:110px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #000000;
+border-radius: 3px;
+  font-size: 1em;
+  box-shadow: 0 40px 46px rgba(0, 0, 0, 0.256), 0 1px 13px rgba(0, 0, 0, 0.08);
+
 }
 .subscribe-form {
   display: flex;
@@ -111,15 +119,18 @@
 }
 
 .newsletter-box {
-  width: 100%;
-  height: 100px;
+  width: auto;
+  height:110px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  color: #333;
+  background-color: white;
+  color: #000000;
+border-radius: 3px;
   font-size: 1em;
+  box-shadow: 0 40px 46px rgba(0, 0, 0, 0.256), 0 1px 13px rgba(0, 0, 0, 0.08);
+
 }
 
 .expandable-newsletters {
