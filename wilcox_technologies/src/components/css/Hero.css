@@ -11,11 +11,12 @@
 .titles {
 
   background: rgba(248, 248, 248, 0);
-
+display: none;
   border-radius: 10px;
   backdrop-filter: blur(10px);
   color: #333;
   font-size: 1.5rem;
+  
   font-weight: bold;
   text-align: center;
   width: fit-content;
@@ -35,14 +36,13 @@ font-size: 1.5rem;
   object-fit: cover;
 }
 .left-side {
-  padding: 3rem;
-  padding-top: 1rem;
+
   height: 100%;
   width: 100%;
   flex: 2 1 ;
   background-color: #ffffff;
   margin:auto;
-  margin:0 1rem 0 0rem;
+  margin:0 1rem 0 3rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 33px rgba(0, 0, 0, 0.08);
 }
 .paragraph{
@@ -70,6 +70,7 @@ font-size: 1.5rem;
 }
 .carousel {
   width: 100%;
+  border-radius: 4px;
 
   height: auto;
 }
@@ -83,7 +84,7 @@ font-size: 1.5rem;
 
 .company-info{
   padding-left: 1%;
-  padding:20px;
+  padding:50px;
   font-size: 1rem;
   font-weight: 500;
   font-style: normal;
@@ -238,8 +239,21 @@ color: #2d2d2d;
 .hidden{
   display: none;
 }
+.carousel-status{
+  display: none;
+}
 /* Media Queries for iPhone */
 @media only screen and (max-width: 768px) {
+  .left-side{
+    padding: 0px;
+    margin: 0px;
+  }
+  .carousel-status{
+    display: none;
+  }
+ .titles{
+  display: none;
+}
   .hero-container {
     flex-direction: column;
     width: 100%;
