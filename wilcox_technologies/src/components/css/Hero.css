@@ -262,10 +262,13 @@ color: #2d2d2d;
     height: 100%;
     margin: auto;
   }
+  .problem.whitebg{
+    border-radius: 25px;
+  }
   .market{display:none}
 .company-info{
-  margin: 0 1rem;
-  padding:20px;
+  margin: 0 ;
+  padding:0px;
 }.llogo{
   min-height: 40px;
   max-height: 50px;
