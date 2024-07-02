@@ -12,11 +12,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-container">
+      <div className={`navbar-container ${isOpen ? 'open' : ''}` }>
         <div className="nav-toggle" onClick={toggleMenu}>
           ☰
         </div>
-        <div className="logo">
+        <div className={`logo ${isOpen ? 'open' : ''}`}>
           <img className="llogo" src={artboard} alt="Your Vision Studios Logo" />
           <div className="logo-text">
             Your Vision Studios
@@ -27,8 +27,10 @@ const Navbar = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/services">Services</Link></li>
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/contact">Book</Link></li>
         </ul>
+        <button className={`start-button ${isOpen?'open':''}`}>Start</button>
+
       </div>
     </nav>
   );

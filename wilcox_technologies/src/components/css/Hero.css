@@ -8,6 +8,7 @@
   box-shadow: 0 4px 46px rgba(0, 0, 0, 0.1), 0 1px 13px rgba(0, 0, 0, 0.08);
 
 }
+
 .titles {
 
   background: rgba(248, 248, 248, 0);
@@ -70,10 +71,10 @@ font-size: 1.5rem;
 }
 .carousel {
   width: 100%;
+
   height: auto;
 }
 .carousel-image{
-  box-shadow: 0 40px 46px rgba(0, 0, 0, 0.1), 0 1px 13px rgba(0, 0, 0, 0.08);
   max-height: 690px;
   padding:0px;
   margin:0px;
@@ -235,7 +236,9 @@ color: #2d2d2d;
 * {
   box-sizing: border-box;
 }
-
+.hidden{
+  display: none;
+}
 /* Media Queries for iPhone */
 @media only screen and (max-width: 768px) {
   .hero-container {
@@ -244,13 +247,23 @@ color: #2d2d2d;
     height: 100%;
     margin: auto;
   }
+  .market{display:none}
 .company-info{
   margin: 0 1rem
+}.llogo{
+  min-height: 40px;
+  max-height: 50px;
+  width: auto;
+  margin-right: 0;
+  padding-right: none;
 }
-
+.logo-text{
+  margin: 0;
+  padding: 0;
+}
   .carousel-image {
     width: 100%;
-    min-height: 325px;
+    height: auto;
   }
 
   .company-info h1 {

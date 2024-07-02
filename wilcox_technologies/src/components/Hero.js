@@ -23,9 +23,9 @@ const Hero = () => {
   return (
     <section className="hero-container">
       <div className="left-side">
-      <h1 className='titles'>Hello, Welcome to Your Vision Studios </h1>
+      <h1 className='titles'>Your Vision Studios </h1>
 
-        <Carousel
+        <Carousel className='carousel-head'
           showArrows={true}
           showThumbs={false}
           infiniteLoop={true}

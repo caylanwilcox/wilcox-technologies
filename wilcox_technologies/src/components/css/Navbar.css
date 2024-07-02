@@ -10,7 +10,6 @@
   z-index: 35;
 
 }
-
 .navbar-container {
   width: 100%;
   padding: 1rem 2rem;
@@ -21,7 +20,9 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.start-button{
+  display: hidden;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -78,29 +79,56 @@
   font-size: 2rem;
   cursor: pointer;
 }
+.start-button {
+  display:none;
+  background-color: #3054e4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
 
+.start-button:hover {
+  background-color: #2538b8;
+}
 @media (max-width: 800px) {
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
   }
-
+.logo-text{
+  display: none;
+}
+.start-button{
+  display: flex;
+}
+.start-button.open{
+  display: none;
+}
   .logo {
     justify-content: center;
     text-align: center;
     font-size: medium;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 0px;
   }
-
+.logo.open{
+  display: none;
+}
   .nav-links.open {
     display: flex;
+justify-content: center;
+text-align: center;
+margin-right: 2rem; /* Adjust margin to account for nav-toggle displacement */
+padding:0;
   }
 
   .nav-toggle {
-    display: block;
-    padding-right: 15px;
+    display: flex;
+    height: 100%;
   }
 
   .digi {
@@ -109,9 +137,20 @@
 
   .navbar {
     flex-direction: row;
-    align-items: flex-start;
     margin-bottom: 8px;
   }
+  .navbar-container{
+padding: 0;
+    margin:0;
+    display: flex;
+  }
+  .navbar-container.open{
+    padding: 0;
+        margin:0;
+        display: flex;
+        align-items: flex-start;
+      }
+
 
   .nav-links li {
     margin: 10px 0;
