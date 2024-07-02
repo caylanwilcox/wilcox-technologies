@@ -48,14 +48,20 @@
   }
   
   @media (max-width: 768px) {
-    .problem, .solution {
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-  
-    .problem-image, .solution-image {
-      margin-top: 2rem;
-    }
+   .problem, .solution {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .problem-text, .solution-text {
+    padding-right: 0;
+    order: 2; /* Text will appear second */
+  }
+
+  .problem-image, .solution-image {
+    margin-top: 2rem;
+    order: 1; /* Image will appear first */
+  }
   }
   
