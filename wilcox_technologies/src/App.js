@@ -13,6 +13,7 @@ import SocialMediaMarketing from './components/SocialMediaMarketing';
 import SeoDataAnalytics from './components/SeoDataAnalytics';
 import './App.css';
 import './reset.css';
+import Blog from './components/Blog';
 
 function App() {
     const webSales = 1200;
@@ -25,8 +26,11 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Hero />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/Blog" element={<Blog/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+        
+
           <Route path="/digital-transformation" element={<DigitalTransformation />} />
           <Route path="/social-media-marketing" element={<SocialMediaMarketing />} />
           <Route path="/seo-data-analytics" element={<SeoDataAnalytics />} />

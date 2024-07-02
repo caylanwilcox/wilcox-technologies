@@ -17,9 +17,9 @@ const Navbar = () => {
           ☰
         </div>
         <div className="logo">
-          <img className="llogo" src={artboard} alt="ProIntel Techs Logo" />
+          <img className="llogo" src={artboard} alt="Your Vision Studios Logo" />
           <div className="logo-text">
-            ProIntel Techs
+            Your Vision Studios
             <div className="market">Data-Driven Solutions to Unlock Maximum Revenue Potential</div>
           </div>
         </div>

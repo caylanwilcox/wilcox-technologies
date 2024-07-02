@@ -30,7 +30,6 @@ const Services = () => {
           <Link to="/seo-data-analytics" className="btn">Learn More</Link>
         </div>
       </div>
-      <PricingTable />
     </div>
   );
 };

@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <section className="hero-container">
       <div className="left-side">
-      <h1 className='titles'>Welcome to ProIntel </h1>
+      <h1 className='titles'>Hello, Welcome to Your Vision Studios </h1>
 
         <Carousel
           showArrows={true}
@@ -51,7 +51,7 @@ const Hero = () => {
         <div className="company-info">
           <h1 className='paragraph'>Who Are We?</h1>
           <p>   
-            At ProIntel, we are driven by innovation and excellence. We specialize in web development, IT solutions, and digital marketing. Our mission is to empower businesses to achieve their full potential through cutting-edge technology and strategic insights.
+            At YourVision, we are driven by innovation and excellence. We specialize in web development, IT solutions, and digital marketing. Our mission is to empower businesses to achieve their full potential through cutting-edge technology and strategic insights.
           </p>
           <p>
             What sets us apart is our commitment to quality and our deep understanding of the digital landscape. We believe in creating sustainable solutions that not only meet but exceed our clients' expectations. Our team of experts works tirelessly to deliver results that make a tangible difference.
@@ -73,30 +73,37 @@ const Hero = () => {
           )}
         </div>
         <div className="recent-newsletters">
-          <h2>Recent Articles</h2>
-          <div className="newsletter-box">
-            <p>Newsletter 1: Our latest updates on digital trends...</p>
-          </div>
-          <div className="newsletter-box">
-            <p>Newsletter 2: Tips and tricks for enhancing your online presence...</p>
-          </div>
-          <div className="newsletter-box" >
-            <p>Newsletter 3: Success stories from our satisfied clients...</p>
-          </div>
+          <h2>Marketing Documentation</h2>
+          <a href="https://online.hbs.edu/blog/post/digital-marketing-skills" target="_blank" rel="noopener noreferrer" className="newsletter-box">
+            <p> 7 DIGITAL MARKETING SKILLS YOU NEED TO CREATE AN EFFECTIVE MARKETING STRATEGY </p>
+        
+          </a>
+        
+          <a href="https://contentmarketinginstitute.com/articles/website-data-buyers-journey" className="newsletter-box">
+            <p>How To Use Your Website Data To See If Your Buyer’s Journey Really Works</p>
+          </a>
+      
         </div>
         <div className="expandable-newsletters">
           <button onClick={toggleNewsletterContent}>Show/Hide Newsletter</button>
           {showNewsletterContent && (
             <div className="newsletter-content">
-              <div className="newsletter-box" style={{ backgroundColor: 'lightcoral' }}>
-                <p>Expanded Newsletter Content 1: In-depth analysis and insights...</p>
-              </div>
-              <div className="newsletter-box" style={{ backgroundColor: 'lightyellow' }}>
-                <p>Expanded Newsletter Content 2: Exclusive interviews with industry leaders...</p>
-              </div>
-              <div className="newsletter-box" style={{ backgroundColor: 'lightpink' }}>
-                <p>Expanded Newsletter Content 3: Upcoming events and webinars...</p>
-              </div>
+                 <a href="https://blog.hubspot.com/marketing/what-is-digital-marketing" className="expandable-newsletter-box">
+            <p>Online Marketing: The Who, What, Why, & How of Digital Marketing</p>
+           
+          </a>
+          <a href="https://www.linkedin.com/pulse/5-reasons-your-business-needs-digital-marketing-services-rawlani/" target="_blank" rel="noopener noreferrer" className="expandable-newsletter-box">
+            <p>5 Reasons Your Business Needs Digital Marketing Services Today</p>
+          </a>
+          <a href="https://contentmarketinginstitute.com/articles/website-content-optimization-mistakes/" target="_blank" rel="noopener noreferrer" className="expandable-newsletter-box">
+            <p>6 Things You’re Doing Wrong With Website Content Optimization</p>
+          </a>
+          <a href="https://www.getfundid.com/sales-marketing/why-is-digital-marketing-important" target="_blank" rel="noopener noreferrer" className="expandable-newsletter-box">
+            <p>Why is Digital Marketing Important for Small Businesses?</p>
+          </a>
+          <a href="https://www.springboard.com/blog/business-and-marketing/digital-marketing-importance/" target="_blank" rel="noopener noreferrer" className="expandable-newsletter-box">
+            <p>Why Is Digital Marketing So Important to Businesses?</p>
+          </a>
             </div>
           )}
         </div>
