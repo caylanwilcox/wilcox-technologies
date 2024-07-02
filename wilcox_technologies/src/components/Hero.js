@@ -32,17 +32,16 @@ const Hero = () => {
           autoPlay={true}
           interval={5000}
         >
+           <div className="carousel-image">
+          <img src={marker}  alt="Image 2" />
+          </div>
             <div className="carousel-image">
           <img src={kip}  alt="Image 3" />
           </div>
     
-              <div className="carousel-image">
-          <img src={Webd}  alt="Image 1" />
-          </div>
         
-          <div className="carousel-image">
-          <img src={marker}  alt="Image 2" />
-          </div>
+        
+          
     
       
       

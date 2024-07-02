@@ -262,7 +262,8 @@ color: #2d2d2d;
   }
   .market{display:none}
 .company-info{
-  margin: 0 1rem
+  margin: 0 1rem;
+  padding:20px;
 }.llogo{
   min-height: 40px;
   max-height: 50px;
