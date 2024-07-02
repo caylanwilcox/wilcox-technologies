@@ -20,7 +20,7 @@ const Navbar = () => {
           <img className="llogo" src={artboard} alt="Your Vision Studios Logo" />
           <div className="logo-text">
             Your Vision Studios
-            <div className="market">Data-Driven Solutions to Unlock Maximum Revenue Potential</div>
+            <div className="market"> <span className='blue'>Data-Driven</span> Solutions to <span className='red'>Help Local </span> Businesses <span className='blue'>Rank On Google </span>  & <span className='green'>Book More Clients</span></div>
           </div>
         </div>
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>

@@ -7,10 +7,12 @@ import './css/Hero.css';
 import kip from './Images/shutterstock_2285412737.jpg';
 import marker from './Images/stockt.jpg';
 import Webd from './Images/web-developer-3.jpg';
-
+import HowIsThisDifferent from './HowIsThisDifferent';
+import TheResult from './TheResult';
+import ProblemAndSolution from './ProblemAndSolution';
 const Hero = () => {
   const [showSubscribeForm, setShowSubscribeForm] = useState(false);
-  const [showNewsletterContent, setShowNewsletterContent] = useState(false);
+  const [showNewsletterContent, setShowNewsletterContent] = useState(true);
 
   const toggleSubscribeForm = () => {
     setShowSubscribeForm(!showSubscribeForm);
@@ -48,7 +50,12 @@ const Hero = () => {
          
         </Carousel>
         <div className="company-info">
-          <h1 className='paragraph'>Who Are We?</h1>
+          <h1 className='paragraph'></h1>
+          <HowIsThisDifferent />
+          <TheResult />
+          <ProblemAndSolution />
+
+
           <p>   
             At YourVision, we are driven by innovation and excellence. We specialize in web development, IT solutions, and digital marketing. Our mission is to empower businesses to achieve their full potential through cutting-edge technology and strategic insights.
           </p>
@@ -84,7 +91,9 @@ const Hero = () => {
       
         </div>
         <div className="expandable-newsletters">
+          
           <button onClick={toggleNewsletterContent}>Show/Hide Newsletter</button>
+          <h2>Essential Reads</h2>
           {showNewsletterContent && (
             <div className="newsletter-content">
                  <a href="https://blog.hubspot.com/marketing/what-is-digital-marketing" className="expandable-newsletter-box">

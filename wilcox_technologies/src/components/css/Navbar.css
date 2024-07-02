@@ -36,7 +36,15 @@
   letter-spacing: .5cap;
   position: relative;
 }
-
+.red{
+  color:red;
+}
+.blue{
+  color: blue;
+}
+.green{
+  color:green;
+}
 .llogo {
   height: 100%;
   margin-right: 6px;
@@ -51,8 +59,10 @@
 .market {
   font-weight: normal;
   font-size: 0.9rem;
-  margin-top: 2px;
+  margin-top: 5px;
   color: #666;
+  letter-spacing: .35cap;
+
 }
 
 .nav-links {
