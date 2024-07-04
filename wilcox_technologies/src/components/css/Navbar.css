@@ -10,6 +10,7 @@
   z-index: 35;
 
 }
+
 .navbar-container {
   width: 100%;
   padding: 1rem 2rem;
@@ -105,6 +106,7 @@
   background-color: #2538b8;
   color: #ffffff;
 }
+
 @media (max-width: 800px) {
   .nav-links {
     display: none;
