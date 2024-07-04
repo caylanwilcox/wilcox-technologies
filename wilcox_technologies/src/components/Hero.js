@@ -10,6 +10,9 @@ import Webd from './Images/web-developer-3.jpg';
 import HowIsThisDifferent from './HowIsThisDifferent';
 import TheResult from './TheResult';
 import ProblemAndSolution from './ProblemAndSolution';
+import pin from './Images/chip.jpg';
+import WhoAmI from './WhoAmI';
+import LocalSearches from './LocalSearches';
 const Hero = () => {
   const [showSubscribeForm, setShowSubscribeForm] = useState(false);
   const [showNewsletterContent, setShowNewsletterContent] = useState(true);
@@ -34,9 +37,7 @@ const Hero = () => {
           autoPlay={true}
           interval={5000}
         >
-           <div className="carousel-image">
-          <img src={marker}  alt="Image 2" />
-          </div>
+
             <div className="carousel-image">
           <img src={kip}  alt="Image 3" />
           </div>
@@ -50,21 +51,15 @@ const Hero = () => {
          
         </Carousel>
         <div className="company-info">
-          <h1 className='paragraph'></h1>
           <HowIsThisDifferent />
+          
           <TheResult />
+
           <ProblemAndSolution />
+                    <LocalSearches/>
 
+<WhoAmI/>
 
-          <p>   
-            At YourVision, we are driven by innovation and excellence. We specialize in web development, IT solutions, and digital marketing. Our mission is to empower businesses to achieve their full potential through cutting-edge technology and strategic insights.
-          </p>
-          <p>
-            What sets us apart is our commitment to quality and our deep understanding of the digital landscape. We believe in creating sustainable solutions that not only meet but exceed our clients' expectations. Our team of experts works tirelessly to deliver results that make a tangible difference.
-          </p>
-          <p>
-            Join us on this journey to transform your business and experience unparalleled growth and success. We are dedicated to providing personalized services that cater to your unique needs, ensuring your business stands out in a competitive market.
-          </p>
         </div>
       </div>
       <div className="right-side">

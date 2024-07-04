@@ -45,10 +45,10 @@ font-size: 1.5rem;
   margin:0 1rem 0 3rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 33px rgba(0, 0, 0, 0.08);
 }
-.paragraph{
+.hero .paragraph{
   text-align: left;
-
-
+font-size: small;
+background-color: red;
 }
 
 .right-side {

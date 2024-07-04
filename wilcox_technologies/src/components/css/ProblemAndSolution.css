@@ -1,6 +1,6 @@
 .problem-and-solution {
     padding: 2rem;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
   }
   .problem, .solution {
     display: flex;
@@ -11,16 +11,13 @@
     gap: 2rem;
   }
   .problem{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 33px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
     padding:1%;
 }
   .problem-text, .solution-text {
     flex: 1;
   }
-  .whitebg{
-    background-color: white;
-  }
+
   .problem-text h2, .solution-text h2 {
     font-size: 2rem;
     color: #333;

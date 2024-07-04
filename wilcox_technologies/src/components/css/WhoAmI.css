@@ -1,0 +1,74 @@
+/* src/components/css/WhoAmI.css */
+
+.who-am-i {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.who-am-i-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.who-am-i-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.who-am-i h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.who-am-i p {
+  color:rgb(85, 85, 85)  ;
+  margin-bottom: 10px;
+}
+
+.who-am-i ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.who-am-i ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.who-am-i ul li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.who-am-i .book-call-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.who-am-i-image {
+  flex: 0 0 150px; /* Adjust size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.who-am-i-image img {
+  width: 250px; /* Ensure this matches the flex-basis in .who-am-i-image */
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
