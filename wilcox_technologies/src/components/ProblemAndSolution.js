@@ -22,7 +22,7 @@ const ProblemAndSolution = () => {
       <div id="visibility-section" className="solution section shaded">
         <div className="solution-text">
           <h2>1. Visibility</h2>
-          <p>Your business needs to show up where your customers are searching for your services. We focus on making you visible on Google.</p>
+          <p>Your business needs to show up where your customers are searching for your services. We focus on making you visible on Google, and converting your customers.</p>
           <p>We’ve developed both organic and paid methods to get your business visibility and get your phone ringing.</p>
         </div>
         <div className="solution-image">
