@@ -1,18 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './css/Navbar.css';
 import { Link } from 'react-router-dom';
-import artboard from './Images/RGBMAX.png';
-
+import artboard from './Images/logo.png';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [timerStarted, setTimerStarted] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const startTimer = () => {
+    if (!timerStarted) {
+      setTimerStarted(true);
+      setTimeout(() => {
+        if (window.Calendly) {
+          window.Calendly.initPopupWidget({ url: 'https://calendly.com/caylanwilcox' });
+        }
+      }, 300000); // 300000 milliseconds = 5 minutes
+    }
+  };
+
+
   return (
     <nav className="navbar">
-      <div className={`navbar-container ${isOpen ? 'open' : ''}` }>
+      <div className={`navbar-container ${isOpen ? 'open' : ''}`}>
         <div className="nav-toggle" onClick={toggleMenu}>
           ☰
         </div>
@@ -20,16 +39,32 @@ const Navbar = () => {
           <img className="llogo" src={artboard} alt="Your Vision Studios Logo" />
           <div className="logo-text">
             Your Vision Studios
-            <div className="market"> <span className='blue'>Data-Driven</span> Solutions to <span className='red'>Help Local </span> Businesses <span className='blue'>Rank On Google </span>  & <span className='green'>Book More Clients</span></div>
+            <div className="market">
+              <span className='blue'>Data-Driven</span> Solutions to <span className='red'>Help Local </span>
+              Businesses <span className='blue'>Rank On Google </span> & <span className='green'>Book More Clients</span>
+            </div>
           </div>
         </div>
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/services">Services</Link></li>
-          <li><Link to="/contact" className='startbutton'>Book</Link></li>
+          <li>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({ url: 'https://calendly.com/caylanwilcox/30min' });
+                }
+                return false;
+              }}
+              className="calendly-link"
+            >
+              Book
+            </a>
+          </li>
         </ul>
-        <button className={`start-button ${isOpen?'open':''}`}>Start</button>
-
+        <button className={`start-button ${isOpen ? 'open' : ''}`}>Start</button>
       </div>
     </nav>
   );

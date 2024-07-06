@@ -1,64 +1,56 @@
-.problem-and-solution {
-    padding: 2rem;
-    background-color: #ffffff;
-  }
-  .problem, .solution {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-    gap: 2rem;
-  }
-  .problem{
-    border-radius: 4px;
-    padding:1%;
+.problem-and-solution .section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
 }
-  .problem-text, .solution-text {
-    flex: 1;
-  }
 
-  .problem-text h2, .solution-text h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .problem-text p, .solution-text p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 1rem;
-    padding-right:.5rem;
-    
-  }
-  
-  .problem-image, .solution-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .problem-image img, .solution-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  @media (max-width: 768px) {
-   .problem, .solution {
+.problem-and-solution .shaded {
+  background-color: #f9f9f9; /* Light grey background for shading */
+}
+
+.problem-and-solution .problem.whitebg {
+  background-color: white;
+}
+
+.problem-and-solution .problem-image,
+.problem-and-solution .solution-image {
+  flex: 1 1 50%;
+  padding: 10px;
+}
+
+.problem-and-solution .problem-text,
+.problem-and-solution .solution-text {
+  flex: 1 1 50%;
+  padding: 10px;
+}
+
+.problem-and-solution img {
+  max-width: 100%;
+  height: auto;
+}
+
+.problem-and-solution h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.problem-and-solution p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .problem-and-solution .section {
     flex-direction: column;
-    text-align: center;
-    margin-bottom: 3rem;
   }
 
-  .problem-text, .solution-text {
-    padding-right: 0;
-    order: 2; /* Text will appear second */
+  .problem-and-solution .problem-image,
+  .problem-and-solution .solution-image,
+  .problem-and-solution .problem-text, 
+  .problem-and-solution .solution-text {
+    flex: 1 1 100%;
   }
-
-  .problem-image, .solution-image {
-    margin-top: 2rem;
-    order: 1; /* Image will appear first */
-  }
-  }
-  
+}

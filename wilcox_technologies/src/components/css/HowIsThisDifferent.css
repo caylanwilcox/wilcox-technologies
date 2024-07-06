@@ -1,6 +1,8 @@
 .how-is-this-different {
+  align-items: center;
     text-align: center;
-    padding: 2rem;
+    padding: 6rem 3rem;
+    
   }
   
   .how-is-this-different h2 {
@@ -15,7 +17,7 @@
   }
   
   .feature {
-    flex: 1 1 30%;
+    flex: 1 ;
     margin: 1rem;
     padding: 1rem;
     border-radius: 10px;

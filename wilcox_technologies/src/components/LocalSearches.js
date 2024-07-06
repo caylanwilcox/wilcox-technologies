@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './css/LocalSearches.css';
-import mapIcon from './Images/map-icon.webp'; // Replace with your actual image path
+import mapIcon from './Images/stock-photo-man-using-virtual-touchscreen-sees-inscription-local-seo-local-search-marketing-e-commerce-2310954637.jpg'; // Replace with your actual image path
+import LocalSearchesCharts from './LocalSearchesCharts';
 
 const LocalSearches = () => {
   const [showCitations, setShowCitations] = useState(false);
@@ -10,11 +11,16 @@ const LocalSearches = () => {
   };
 
   return (
-    <section className="local-searches">
-      <div className="info-icon" onClick={toggleCitations}>i</div>
+    <section className="local-searches section">
+      <div className="image-content">
+        <img src={mapIcon} alt="Local Search Icon" />
+      </div>
+      <div className="info-icon" onClick={toggleCitations}>
+        {showCitations ? '×' : 'i'}
+      </div>
       <div className="text-content">
-      <h2>Essential Insights on Local Searches</h2>
-      <p>“Near me” searches have <b>increased 900%</b> in the last two years.<sup>1</sup> Here are some other stats you should know.</p>
+        <h2>Essential Insights on Local Searches</h2>
+        <p>“Near me” searches have <b>increased 900%</b> in the last two years.<sup>1</sup> Here are some other stats you should know.</p>
         <ul>
           <li><strong>46%</strong> of all searches on Google are now <strong>local</strong>.<sup>2</sup></li>
           <li><strong>97%</strong> of Google’s users have searched for <strong>local</strong> businesses.<sup>3</sup></li>
@@ -24,9 +30,7 @@ const LocalSearches = () => {
         </ul>
         <p><b>We’ll get you a bigger piece of this pie.</b></p>
       </div>
-      <div className="image-content">
-        <img src={mapIcon} alt="Local Search Icon" />
-      </div>
+
       {showCitations && (
         <div className="citations-overlay">
           <div className="citations-content">
@@ -41,6 +45,8 @@ const LocalSearches = () => {
           </div>
         </div>
       )}
+
+     
     </section>
   );
 };
