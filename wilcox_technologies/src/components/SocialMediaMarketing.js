@@ -3,6 +3,11 @@ import './css/SocialMediaMarketing.css'; // Use the same CSS file
 import socialMediaMarketingImage from './Images/social-media-marketing.jpg';
 
 const SocialMediaMarketing = () => {
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({ url: 'https://calendly.com/caylanwilcox/30min' });
+    }
+  };
   return (
     <div className="social-media-marketing">
       <div className="social-media-marketing-image-container">
@@ -77,9 +82,10 @@ const SocialMediaMarketing = () => {
         <div className="social-media-marketing-cta">
           <h2>Get Started Today</h2>
           <p>Boost your brand's visibility and engagement with our expert social media marketing services. Contact us to learn more about how we can help you achieve your goals.</p>
-          <a href="#" className="social-media-marketing-btn-learn-more">Learn More</a>
+          <button onClick={openCalendly} className="social-media-marketing-btn-learn-more">Learn More </button>
         </div>
       </div>
+
     </div>
   );
 };

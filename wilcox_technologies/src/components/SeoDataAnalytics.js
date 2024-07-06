@@ -3,6 +3,11 @@ import './css/SeoDataAnalytics.css';
 import seoDataAnalyticsImage from './Images/seo-data-analytics.jpg';
 
 const SeoDataAnalytics = () => {
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({ url: 'https://calendly.com/caylanwilcox/30min' });
+    }
+  };
   return (
     <div className="seo-data-analytics">
       <div className="seo-data-analytics-image-container">
@@ -69,7 +74,7 @@ const SeoDataAnalytics = () => {
         <div className="seo-data-analytics-cta">
           <h2>Get Started Today</h2>
           <p>Boost your search engine rankings and gain valuable insights with our expert SEO and data analytics services. Contact us to learn more about how we can help you achieve your goals.</p>
-          <a href="#" className="seo-data-analytics-btn-learn-more">Learn More</a>
+          <button onClick={openCalendly} className="seo-data-analytics-btn-learn-more">Learn More</button>
         </div>
       </div>
     </div>

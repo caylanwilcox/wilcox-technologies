@@ -10,6 +10,12 @@
   z-index: 35;
 
 }
+.calendar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
 
 .navbar-container {
   width: 100%;
@@ -35,6 +41,7 @@
   font-style: normal;
   font-family: "Open Sans", sans-serif;
   letter-spacing: .5cap;
+  text-decoration: none;
   position: relative;
 }
 .red{
@@ -171,7 +178,8 @@
     justify-content: center;
     text-align: center;
     font-size: medium;
-    margin: 0;
+    margin-left:15%;
+
     margin-top: 0px;
   }
 .logo.open{

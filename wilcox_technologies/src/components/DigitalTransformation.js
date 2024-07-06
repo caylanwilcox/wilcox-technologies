@@ -1,8 +1,14 @@
 import React from 'react';
 import './css/DigitalTransformation.css';
-import digitalTransformationImage from './Images/digital-transformation.jpg'
+import digitalTransformationImage from './Images/digital-transformation.jpg';
 
 const DigitalTransformation = () => {
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({ url: 'https://calendly.com/caylanwilcox/30min' });
+    }
+  };
+
   return (
     <div className="digital-transformation">
       <div className="digital-transformation-image-container">
@@ -10,7 +16,9 @@ const DigitalTransformation = () => {
       </div>
       <div className="digital-transformation-content-container">
         <h1 className="digital-transformation-title">Digital Transformation</h1>
-        <p className="digital-transformation-intro">Transform Your Business with Digital Solutions that Drive Growth and Efficiency</p>
+        <p className="digital-transformation-intro">
+          Transform Your Business with Digital Solutions that Drive Growth and Efficiency
+        </p>
         <p className="digital-transformation-description">
           Our Digital Transformation service is designed to elevate your business by leveraging cutting-edge digital solutions that enhance efficiency and drive growth. We focus on creating a seamless and engaging digital presence that not only attracts visitors but converts them into loyal customers.
         </p>
@@ -85,7 +93,7 @@ const DigitalTransformation = () => {
         <div className="digital-transformation-cta">
           <h2>Get Started Today</h2>
           <p>Transform your digital presence and take your business to new heights. Contact us to learn more about our Digital Transformation service and how we can help you achieve your goals.</p>
-          <a href="#" className="digital-transformation-btn-learn-more">Learn More</a>
+          <button onClick={openCalendly} className="digital-transformation-btn-learn-more">Learn More</button>
         </div>
       </div>
     </div>

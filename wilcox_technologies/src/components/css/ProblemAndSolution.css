@@ -53,4 +53,15 @@
   .problem-and-solution .solution-text {
     flex: 1 1 100%;
   }
+
+  /* Ensure text comes before the image on mobile */
+  .problem-and-solution .problem-text,
+  .problem-and-solution .solution-text {
+    order: 1;
+  }
+
+  .problem-and-solution .problem-image,
+  .problem-and-solution .solution-image {
+    order: 2;
+  }
 }

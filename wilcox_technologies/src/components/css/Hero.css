@@ -11,6 +11,7 @@
   width: 80%;
   margin: auto;
   margin-top: 2rem;
+  
 }
 
 .left-side {
@@ -25,14 +26,13 @@
 
 .hero-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center; /* Align items to the bottom */
   padding:2rem 3rem 0 3rem;
   background-color: #f7f7f7;
   border-radius: 10px;
   gap: 2rem;
   padding-bottom: 0;
-
 }
 
 .hero-text {
@@ -365,6 +365,14 @@ min-width: 50%;
     margin: 0;
     padding: 0;
   }
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 20px 0;
+  text-align: center;
+}
+
   .carousel-image {
     width: 100%;
     height: auto;
