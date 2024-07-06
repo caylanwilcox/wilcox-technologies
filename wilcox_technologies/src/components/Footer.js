@@ -14,13 +14,7 @@ const Footer = () => {
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram className="instagram" /></a>
         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin className="social-icon" /></a>
       </div>
-      <div className="newsletter">
-        <p>Subscribe to our Newsletter:</p>
-        <form action="#">
-          <input type="email" placeholder="Enter your email" />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
+      
     </footer>
   );
 };

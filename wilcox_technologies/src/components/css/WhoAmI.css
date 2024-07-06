@@ -5,7 +5,6 @@
   padding: 20px;
   background-color: #ffffff; /* Changed to white for a clean look */
   border-radius: 10px;
-  border-bottom:2px solid #007bff;
   margin-bottom: 20px;
   text-align: start;
 }
@@ -25,14 +24,20 @@
   font-size: 2em;
   margin-bottom: 10px;
   color: #333333; /* Darker color for better readability */
+  text-align: center;
 }
 
 .who-am-i p {
   color: #555555; /* Neutral grey for text */
   margin-bottom: 10px;
   line-height: 1.6; /* Improved readability */
+  font-size: 1em;
 }
+.preach{
+  text-align: center;
+  padding: 50px;
 
+}
 .who-am-i ul {
   list-style: none;
   padding-left: 0;
@@ -44,7 +49,7 @@
   padding-left: 20px;
   margin-bottom: 10px;
   color: #555555; /* Consistent text color */
-  font-size: 1em; /* Standardized font size */
+  font-size: 1.2em; /* Standardized font size */
 }
 
 .who-am-i ul li::before {
@@ -58,17 +63,29 @@
 
 .who-am-i .book-call-button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 20px 20px;
   background-color: #007bff; /* Consistent branding color */
   color: white;
+font-size: 1.3em;
   text-decoration: none;
+  border: none;
   border-radius: 5px;
-  margin-top: 10px;
+  align-self: center;
+  margin-top: 30px;
   transition: background-color 0.3s; /* Smooth transition */
 }
 
 .who-am-i .book-call-button:hover {
   background-color: #0056b3; /* Darker shade on hover */
+}
+.Decision-Time{
+  align-items: center; /* Align items to the bottom */
+  padding: 3rem;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  gap: 2rem;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 33px rgba(0, 0, 0, 0.08);
 }
 
 .who-am-i-image {

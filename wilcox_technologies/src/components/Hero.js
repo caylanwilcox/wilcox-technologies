@@ -1,8 +1,8 @@
-// Hero.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './css/Hero.css';
-import kip from './Images/ProfileImage.png'; // Ensure this is the correct path
+import kip from './Images/dd.png'; // Ensure this is the correct path
+import logo from './Images/logo.png'; // Ensure this is the correct path
 import HowIsThisDifferent from './HowIsThisDifferent';
 import TheResult from './TheResult';
 import ProblemAndSolution from './ProblemAndSolution';
@@ -12,6 +12,18 @@ import SideWidgetButton from './SideWidgetButton';
 
 const Hero = () => {
   const [showRightSide, setShowRightSide] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const toggleRightSide = () => {
     setShowRightSide(!showRightSide);
@@ -29,18 +41,24 @@ const Hero = () => {
     <section className={`hero-container ${showRightSide ? '' : 'centered-container'}`}>
       <div className={`left-side ${showRightSide ? '' : 'centered'}`}>
         <div className="hero-section">
-          <div className="hero-text">
-            <h2>Achieve Remarkable Business Growth With Your Vision Studios
-            </h2>
+          <div className="hero-text hero-text-mobile">
+            <h2>Achieve Remarkable Business Growth With Your Vision Studios</h2>
+            {isMobile && (
+              <div className="hero-image-mobile">
+                <img src={kip} alt="Hero" />
+              </div>
+            )}
             <p>Gain market dominance quickly and effectively<br />with our expert, innovative marketing techniques.</p>
             <div className="cta-buttons">
               <button className="cta-button primary" onClick={openCalendly}>Get Started →</button>
               <button className="cta-button secondary" onClick={goToServices}>Our Services</button>
             </div>
           </div>
-          <div className="hero-image">
-            <img src={kip} alt="Hero" />
-          </div>
+          {!isMobile && (
+            <div className="hero-image">
+              <img src={kip} alt="Hero" />
+            </div>
+          )}
         </div>
         <div className="company-info">
           <HowIsThisDifferent />
@@ -51,21 +69,12 @@ const Hero = () => {
       </div>
       {showRightSide && (
         <div className="right-side">
-          <div className="newsletter-subscribe">
-            <button onClick={toggleRightSide}>Subscribe to Newsletter</button>
-          </div>
+          <div className="top-row">
+            <img src={logo} alt="Logo" className="logo-img" />
+            <h2>Essential Reads</h2>          </div>
           <div className="recent-newsletters">
-            <h2>Marketing Documentation</h2>
-            <a href="https://online.hbs.edu/blog/post/digital-marketing-skills" target="_blank" rel="noopener noreferrer" className="newsletter-box">
-              <p>7 DIGITAL MARKETING SKILLS YOU NEED TO CREATE AN EFFECTIVE MARKETING STRATEGY</p>
-            </a>
-            <a href="https://contentmarketinginstitute.com/articles/website-data-buyers-journey" className="newsletter-box">
-              <p>How To Use Your Website Data To See If Your Buyer’s Journey Really Works</p>
-            </a>
-          </div>
-          <div className="expandable-newsletters">
-            <h2>Essential Reads</h2>
-            <div className="newsletter-content">
+         
+            <div className="newsletter-box">
               <a href="https://blog.hubspot.com/marketing/what-is-digital-marketing" className="expandable-newsletter-box">
                 <p>Online Marketing: The Who, What, Why, & How of Digital Marketing</p>
               </a>
@@ -80,6 +89,12 @@ const Hero = () => {
               </a>
               <a href="https://www.springboard.com/blog/business-and-marketing/digital-marketing-importance/" target="_blank" rel="noopener noreferrer" className="expandable-newsletter-box">
                 <p>Why Is Digital Marketing So Important to Businesses?</p>
+              </a>
+              <a href="https://online.hbs.edu/blog/post/digital-marketing-skills" target="_blank" rel="noopener noreferrer" className="expandable-newsletter-box">
+                <p>7 DIGITAL MARKETING SKILLS YOU NEED TO CREATE AN EFFECTIVE MARKETING STRATEGY</p>
+              </a>
+              <a href="https://contentmarketinginstitute.com/articles/website-data-buyers-journey" className="expandable-newsletter-box">
+                <p>How To Use Your Website Data To See If Your Buyer’s Journey Really Works</p>
               </a>
             </div>
           </div>

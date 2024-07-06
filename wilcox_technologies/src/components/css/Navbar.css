@@ -6,8 +6,9 @@
   height: 100%;
   padding: 1rem 2rem 0 2rem;
   width: 100%;
-  border-radius: 4px;
   z-index: 35;
+  margin-bottom: 0px;
+  box-shadow: 22px 422px 222px rgba(0, 0, 0, 0.1), 2 22px 22px rgba(0, 0, 0, 0.08);
 
 }
 .calendar-button {
@@ -26,6 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .start-button{
   display: hidden;
@@ -160,6 +162,9 @@
 }
 
 @media (max-width: 800px) {
+  .hero-text-mobile h2{
+    margin-top: 10;
+  }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -178,7 +183,7 @@
     justify-content: center;
     text-align: center;
     font-size: medium;
-    margin-left:15%;
+    margin-left:12%;
 
     margin-top: 0px;
   }
@@ -204,7 +209,9 @@ padding:0;
 
   .navbar {
     flex-direction: row;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+
   }
   .navbar-container{
 padding: 0;
