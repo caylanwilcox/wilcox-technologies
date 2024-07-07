@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './css/Hero.css';
 import kip from './Images/dd.png'; // Ensure this is the correct path
@@ -13,6 +13,7 @@ import SideWidgetButton from './SideWidgetButton';
 const Hero = () => {
   const [showRightSide, setShowRightSide] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const rightSideRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,6 +25,12 @@ const Hero = () => {
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useEffect(() => {
+    if (showRightSide && rightSideRef.current) {
+      rightSideRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [showRightSide]);
 
   const toggleRightSide = () => {
     setShowRightSide(!showRightSide);
@@ -68,12 +75,12 @@ const Hero = () => {
         </div>
       </div>
       {showRightSide && (
-        <div className="right-side">
+        <div className="right-side" ref={rightSideRef}>
           <div className="top-row">
             <img src={logo} alt="Logo" className="logo-img" />
-            <h2>Essential Reads</h2>          </div>
+            <h2>Essential Reads</h2>          
+          </div>
           <div className="recent-newsletters">
-         
             <div className="newsletter-box">
               <a href="https://blog.hubspot.com/marketing/what-is-digital-marketing" className="expandable-newsletter-box">
                 <p>Online Marketing: The Who, What, Why, & How of Digital Marketing</p>
