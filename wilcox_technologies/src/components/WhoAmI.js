@@ -18,8 +18,11 @@ const WhoAmI = () => {
             <img src={profileImage} alt="Caylan Wilcox" />
           </div>
           <p className='preach'>
-            I’m Caylan Wilcox, founder of Your Vision Studios. I've always been fascinated by numbers, statistics, and understanding human behavior. As a web developer, I initially focused on creating websites. However, I soon realized that I could make a more significant impact by developing business investment applications that help companies grow.
+            My name is Caylan Wilcox, and I founded Your Vision Studios specifically to help business professionals land local clients without feeling like they're gambling thier money with garden-variety web agencies.
+            <br/>   <br/>         As a Business owner myself, I know that it is important to get fast results. I also know that you dont have the time to worry about figuring out what to say on your website, what to share on social media, and how to leverage all the latest online marketing trends. So, we take care of everything for you.
+
           </p>
+         
           <div className='Decision-Time'>
           <h2>Decision Time</h2>
           <p>

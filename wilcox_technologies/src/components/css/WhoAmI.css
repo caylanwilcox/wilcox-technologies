@@ -35,8 +35,8 @@
 }
 .preach{
   text-align: center;
-  padding: 50px;
-
+  padding: 70px;
+padding-top: 20px;
 }
 .who-am-i ul {
   list-style: none;
@@ -110,7 +110,9 @@ font-size: 1.3em;
     flex-direction: column;
     text-align: center; /* Center text for mobile */
   }
-
+.preach{
+  padding: 10px;
+}
   .who-am-i-text {
     padding-right: 0;
     margin-bottom: 20px; /* Space between text and image */
@@ -119,7 +121,9 @@ font-size: 1.3em;
   .who-am-i-image {
     margin-left: 0;
   }
-
+.Decision-Time{
+  padding: 20px;
+}
   .who-am-i-image img {
     width: 120px; /* Smaller image on mobile */
     height: 120px;

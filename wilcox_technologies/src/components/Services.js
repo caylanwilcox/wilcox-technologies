@@ -9,7 +9,9 @@ import PricingTable from './PricingTable.js';
 const Services = () => {
   return (
     <div className="services-container">
-      <h1>Our Exciting Service Offerings</h1>
+      <div className='scenes'>
+      <h1>Behind The Scenes Working For You</h1>
+      </div>
       <div className="services-grid">
         <div className="service-item">
           <img src={digitalTransformationImage} alt="Digital Transformation" />
