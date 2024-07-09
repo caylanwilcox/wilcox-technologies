@@ -14,7 +14,7 @@ const ProblemAndSolution = () => {
         </div>
         <div className="problem-text">
           <h2>Here's The Problem</h2>
-          <p>Many home service businesses feel invisible online. They have a website but it’s getting no traffic. They’ve tried a hodge podge of different marketing methods with disappointing results.</p>
+          <p>Many businesses feel invisible online. They have a website but it’s getting no traffic. They’ve tried a hodge podge of different marketing methods with disappointing results.</p>
           <p>The problem is – they don’t realize that <b>it only takes three elements</b> to start showing up online and getting more booked jobs.</p>
         </div>
       </div>
