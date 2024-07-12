@@ -14,6 +14,7 @@ import SeoDataAnalytics from './components/SeoDataAnalytics';
 import './App.css';
 import './reset.css';
 import Blog from './components/Blog';
+import Prices from './components/Prices';
 
 function App() {
     const webSales = 1200;
@@ -30,6 +31,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         
+          <Route path="/prices" element={<Prices/>} />
 
           <Route path="/digital-transformation" element={<DigitalTransformation />} />
           <Route path="/social-media-marketing" element={<SocialMediaMarketing />} />

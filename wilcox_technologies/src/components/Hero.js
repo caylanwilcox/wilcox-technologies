@@ -49,7 +49,7 @@ const Hero = () => {
       <div className={`left-side ${showRightSide ? '' : 'centered'}`}>
         <div className="hero-section">
           <div className="hero-text hero-text-mobile">
-            <h2>Achieve Remarkable Business Growth With Your Vision Studios</h2>
+            <h2>Hot Local Leads For Your Business <span className='blue'>Guaranteed</span></h2>
             {isMobile && (
               <div className="hero-image-mobile">
                 <img src={kip} alt="Hero" />

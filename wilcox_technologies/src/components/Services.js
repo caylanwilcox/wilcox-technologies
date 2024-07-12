@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <div className="services-container">
       <div className='scenes'>
-      <h1>Behind The Scenes Working For You</h1>
+      <h1>Business Management</h1>
       </div>
       <div className="services-grid">
         <div className="service-item">

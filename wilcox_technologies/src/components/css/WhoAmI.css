@@ -7,12 +7,16 @@
   border-radius: 10px;
   margin-bottom: 20px;
   text-align: start;
+  width: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .who-am-i-content {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 90%;
 }
 
 .who-am-i-text {

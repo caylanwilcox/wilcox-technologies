@@ -53,7 +53,7 @@ const Navbar = () => {
         </Link>
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
           <li><Link to="/">Home</Link></li>
-         {/* */} <li><Link to="/services">Services</Link></li>
+         {/* */}
           <li>
             <a
               href="#"
@@ -66,7 +66,7 @@ const Navbar = () => {
               }}
               className="calendly-link"
             >
-              Book
+              Start
             </a>
           </li>
         </ul>

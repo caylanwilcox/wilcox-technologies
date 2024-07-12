@@ -1,0 +1,121 @@
+.prices-container {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .pricing-plan {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+    padding: 20px;
+    flex: 1 1 30%;
+    max-width: 350px;
+  }
+  
+  .pricing-plan:hover {
+    transform: translateY(-10px);
+  }
+  
+  .plan-header {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .plan-header h2 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .monthly-price {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .good-plan-setup-costs,
+  .better-plan-setup-costs,
+  .best-plan-setup-costs,
+  .good-plan-recurring-costs,
+  .better-plan-recurring-costs,
+  .best-plan-recurring-costs {
+    margin-top: 20px;
+  }
+  
+  .good-plan-setup-costs h3,
+  .better-plan-setup-costs h3,
+  .best-plan-setup-costs h3,
+  .good-plan-recurring-costs h3,
+  .better-plan-recurring-costs h3,
+  .best-plan-recurring-costs h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .setup-list,
+  .monthly-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .setup-list-item,
+  .monthly-list-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+  }
+  
+  .setup-list-item:last-child,
+  .monthly-list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .setup-list-item:before,
+  .monthly-list-item:before {
+    content: '✔';
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .setup-list-item,
+  .monthly-list-item {
+    padding-left: 10px;
+    color: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .pricing-plan {
+      flex: 1 1 45%;
+      min-width: 280px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-plan {
+      flex: 1 1 100%;
+      min-width: 100%;
+    }
+  }
+  
