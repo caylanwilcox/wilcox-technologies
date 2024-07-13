@@ -36,8 +36,8 @@ const Prices = () => {
         <div className="pricing-plan better-plan">
           <div className="plan-header">
             <h2>Better</h2>
-            <div className="price">$3,500 setup</div>
-            <div className="monthly-price">$1,250/month</div>
+            <div className="price">$3,000 setup</div>
+            <div className="monthly-price">$750/month</div>
           </div>
           <div className="better-plan-setup-costs">
             <h3>Setup Includes:</h3>
