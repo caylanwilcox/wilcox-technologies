@@ -6,7 +6,7 @@ const Prices = () => {
   return (
     <div className="prices-container">
       <h1>          
-      <span className='red'>PLAYBOOKS</span> <span className='blue'>FOR</span> <span className='green'>GROWTH!</span></h1>
+      <span className='red'>PLAYBOOKS</span> <span className='blue'>FOR</span> <span className='green'>GROWTH</span></h1>
       <div className="pricing-table">
         <div className="pricing-plan good-plan">
           <div className="plan-header">
