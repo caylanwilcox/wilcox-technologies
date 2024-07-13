@@ -1,10 +1,12 @@
 import React from 'react';
 import './css/Prices.css';
+import artboard from './Images/logo.png';
 
 const Prices = () => {
   return (
     <div className="prices-container">
-      <h1>Our Pricing Plans</h1>
+      <h1>          
+      <span className='red'>PLAYBOOKS</span> <span className='blue'>FOR</span> <span className='green'>GROWTH!</span></h1>
       <div className="pricing-table">
         <div className="pricing-plan good-plan">
           <div className="plan-header">
