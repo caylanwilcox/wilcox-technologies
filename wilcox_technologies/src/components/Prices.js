@@ -10,7 +10,7 @@ const Prices = () => {
       <div className="pricing-table">
         <div className="pricing-plan good-plan">
           <div className="plan-header">
-            <h2>Good</h2>
+            <h2>Brand Foundation</h2>
             <div className="price">$1,500 setup</div>
             <div className="monthly-price">$500/month</div>
           </div>
@@ -35,7 +35,7 @@ const Prices = () => {
 
         <div className="pricing-plan better-plan">
           <div className="plan-header">
-            <h2>Better</h2>
+            <h2>Brand Establishment</h2>
             <div className="price">$3,000 setup</div>
             <div className="monthly-price">$750/month</div>
           </div>
@@ -67,7 +67,7 @@ const Prices = () => {
 
         <div className="pricing-plan best-plan">
           <div className="plan-header">
-            <h2>Best</h2>
+            <h2>Executive Growth Plan</h2>
             <div className="price">$5,000 setup</div>
             <div className="monthly-price">$2,000/month</div>
           </div>
